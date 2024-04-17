@@ -30,4 +30,4 @@ mapbox_gl = false
 mermaid = false
 
 [extra.analytics]
-goatcounter = "https://paper.goatcounter.com/count"
+goatcounter = "https://paper-zola.goatcounter.com/count"
