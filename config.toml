@@ -1,0 +1,31 @@
+base_url = "https://paper.pages.dev"
+title = "Paper"
+description = "Zola Theme"
+author = "George Fotopoulos"
+compile_sass = false
+minify_html = true
+build_search_index = false
+generate_feed = true
+feed_filename = "atom.xml"
+
+[markdown]
+highlight_code = true
+highlight_theme = "one-dark"
+render_emoji = true
+smart_punctuation = true
+
+[extra]
+navbar_items = [
+    { title = "Posts", url = "/posts/", icon = "fas fa-file" }
+]
+social_items = [
+    { title = "GitHub", url = "https://github.com/xorz57", icon = "fab fa-github" },
+    { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "fab fa-linkedin" }
+]
+chart = false
+katex = false
+mapbox_gl = false
+mermaid = false
+
+[extra.analytics]
+goatcounter = "https://paper.goatcounter.com/count"
