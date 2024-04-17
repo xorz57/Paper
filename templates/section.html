@@ -3,30 +3,29 @@
 {% block main %}
 <div class="container">
     {% if section.title %}
-    <p class="title is-1">{{ section.title | safe }}</p>
+    <p class="title is-3">{{ section.title | safe }}</p>
     {% endif %}
 
     {% for page in section.pages %}
     <div class="block">
         <a href="{{ page.permalink | safe }}">
-            <p class="subtitle is-3">
-                <span class="icon">
-                    <i class="fas fa-file" aria-hidden="true"></i>
-                </span>
-                <span>
-                    {% if page.title %}
-                    {{ page.title | safe }}
-                    {% endif %}
-                </span>
-                <span class="icon">
-                    <i class="fas fa-calendar" aria-hidden="true"></i>
-                </span>
-                <span>
-                    {% if page.date %}
-                    {{ page.date | safe }}
-                    {% endif %}
-                </span>
-            </p>
+            <div class="columns is-mobile">
+                <div class="column is-half">
+                    <p class="subtitle is-5 has-text-left">
+                        {% if page.title %}
+                        {{ page.title | safe }}
+                        {% endif %}
+                    </p>
+                </div>
+
+                <div class="column is-half">
+                    <p class="subtitle is-5 has-text-right">
+                        {% if page.date %}
+                        {{ page.date | safe }}
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
         </a>
     </div>
     {% endfor %}
