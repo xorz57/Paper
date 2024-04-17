@@ -6,28 +6,29 @@
     <p class="title is-3">{{ section.title | safe }}</p>
     {% endif %}
 
-    {% for page in section.pages %}
-    <div class="block">
-        <a href="{{ page.permalink | safe }}">
-            <div class="columns is-mobile">
-                <div class="column is-half">
-                    <p class="subtitle is-5 has-text-left">
-                        {% if page.title %}
-                        {{ page.title | safe }}
-                        {% endif %}
-                    </p>
+    <ul>
+        {% for page in section.pages %}
+        <li>
+            <a href="{{ page.permalink | safe }}">
+                <div class="columns is-mobile">
+                    <div class="column is-half">
+                        <p class="subtitle is-5 has-text-left">
+                            {% if page.title %}
+                            {{ page.title | safe }}
+                            {% endif %}
+                        </p>
+                    </div>
+                    <div class="column is-half">
+                        <p class="subtitle is-5 has-text-right">
+                            {% if page.date %}
+                            {{ page.date | safe }}
+                            {% endif %}
+                        </p>
+                    </div>
                 </div>
-
-                <div class="column is-half">
-                    <p class="subtitle is-5 has-text-right">
-                        {% if page.date %}
-                        {{ page.date | safe }}
-                        {% endif %}
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-    {% endfor %}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 {% endblock main %}
