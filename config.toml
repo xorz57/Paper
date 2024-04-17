@@ -10,7 +10,7 @@ feed_filename = "atom.xml"
 
 [markdown]
 highlight_code = true
-highlight_theme = "one-dark"
+highlight_theme = "material-light"
 render_emoji = true
 smart_punctuation = true
 
