@@ -1,4 +1,4 @@
-base_url = "https://paper.pages.dev"
+base_url = "https://paper-zola.pages.dev"
 title = "Paper"
 description = "Zola Theme"
 author = "George Fotopoulos"
