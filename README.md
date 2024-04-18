@@ -17,3 +17,10 @@
 ## Page Speed Insights
 - [Desktop](https://pagespeed.web.dev/analysis/https-paper-zola-pages-dev/5lfdl7yonv?form_factor=desktop)
 - [Mobile](https://pagespeed.web.dev/analysis/https-paper-zola-pages-dev/5lfdl7yonv?form_factor=mobile)
+
+## Usage
+
+1. Fork this repository
+2. Edit the `content` directory
+3. Edit the `config.toml` file
+4. Run `zola serve`
