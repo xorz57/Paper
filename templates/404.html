@@ -7,7 +7,7 @@
     {% set item = config.extra.navbar_items | first %}
     <a class="button" href="{{ item.url | safe }}">
         <span class="icon">
-            {{ load_data(path='icon/' ~ item.icon ~ '.svg') | safe }}
+            {{ load_data(path='icons/' ~ item.icon ~ '.svg') | safe }}
         </span>
         <span>{{ item.title | safe }}</span>
     </a>
