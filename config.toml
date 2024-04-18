@@ -17,7 +17,7 @@ smart_punctuation = true
 [extra]
 navbar_items = [
     { title = "Home", url = "/", icon = "home-fill" },
-    { title = "About", url = "/about/", icon = "user-fill" },
+    { title = "About", url = "/about/", icon = "account-circle-fill" },
     { title = "Posts", url = "/posts/", icon = "article-fill" },
     { title = "Projects", url = "/projects/", icon = "flask-fill" }
 ]
