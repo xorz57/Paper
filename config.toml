@@ -16,14 +16,14 @@ smart_punctuation = true
 
 [extra]
 navbar_items = [
-    { title = "Home", url = "/", icon = "home-line" },
-    { title = "About", url = "/about/", icon = "user-line" },
-    { title = "Posts", url = "/posts/", icon = "article-line" },
-    { title = "Projects", url = "/projects/", icon = "flask-line" }
+    { title = "Home", url = "/", icon = "home-fill" },
+    { title = "About", url = "/about/", icon = "user-fill" },
+    { title = "Posts", url = "/posts/", icon = "article-fill" },
+    { title = "Projects", url = "/projects/", icon = "flask-fill" }
 ]
 social_items = [
-    { title = "GitHub", url = "https://github.com/xorz57", icon = "github-line" },
-    { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "linkedin-line" }
+    { title = "GitHub", url = "https://github.com/xorz57", icon = "github-fill" },
+    { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "linkedin-fill" }
 ]
 chart = false
 katex = false
