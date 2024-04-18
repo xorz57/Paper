@@ -5,6 +5,7 @@
 ## Dependencies
 
 - Zola
+- Remix Icon
 - Bulma CSS
 - Mermaid.js
 - Chart.js
