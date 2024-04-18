@@ -6,7 +6,6 @@
 
 - Zola
 - Bulma CSS
-- Barba.js
 - Mermaid.js
 - Chart.js
 - Katex
