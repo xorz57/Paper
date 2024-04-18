@@ -4,9 +4,7 @@
         <a class="navbar-item" href="{{ config.base_url | safe }}">
             <span class="icon-text">
                 <span class="icon">
-                    {% set icon_path = "static/icon/" ~ item.icon ~ ".svg" %}
-                    {% set icon = load_data(path=icon_path) %}
-                    {{ icon | safe }}
+                    {{ load_data(path="static/icon/" ~ item.icon ~ ".svg") | safe }}
                 </span>
                 <span>{{ item.title | safe }}</span>
             </span>
@@ -27,9 +25,7 @@
             <a class="navbar-item" href="{{ item.url | safe }}">
                 <span class="icon-text">
                     <span class="icon">
-                        {% set icon_path = "static/icon/" ~ item.icon ~ ".svg" %}
-                        {% set icon = load_data(path=icon_path) %}
-                        {{ icon | safe }}
+                        {{ load_data(path="static/icon/" ~ item.icon ~ ".svg") | safe }}
                     </span>
                     <span>{{ item.title | safe }}</span>
                 </span>
