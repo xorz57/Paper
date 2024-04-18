@@ -4,7 +4,7 @@
         <a class="navbar-item" href="{{ config.base_url | safe }}">
             <span class="icon-text">
                 <span class="icon">
-                    <img src="{{ get_url(path='icon/' ~ item.icon ~ '.svg') | safe }}" alt="">
+                    {{ load_data(path='icon/' ~ item.icon ~ '.svg') | safe }}
                 </span>
                 <span>{{ item.title | safe }}</span>
             </span>
@@ -25,7 +25,7 @@
             <a class="navbar-item" href="{{ item.url | safe }}">
                 <span class="icon-text">
                     <span class="icon">
-                        <img src="{{ get_url(path='icon/' ~ item.icon ~ '.svg') | safe }}" alt="">
+                        {{ load_data(path='icon/' ~ item.icon ~ '.svg') | safe }}
                     </span>
                     <span>{{ item.title | safe }}</span>
                 </span>
