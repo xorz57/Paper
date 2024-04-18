@@ -4,11 +4,12 @@
 <div class="container has-text-centered">
     <p class="title is-1">404</p>
     <p class="subtitle is-3">Page Not Found</p>
-    <a class="button" href="{{ config.base_url | safe }}">
+    {% set item = config.extra.navbar_items | first %}
+    <a class="button" href="{{ item.url | safe }}">
         <span class="icon">
-            {{ load_data(path="static/icon/home-fill.svg") | safe }}
+            {{ load_data(path='icon/' ~ item.icon ~ '.svg') | safe }}
         </span>
-        <span>Home</span>
+        <span>{{ item.title | safe }}</span>
     </a>
 </div>
 {% endblock main %}
