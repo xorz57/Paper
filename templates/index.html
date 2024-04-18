@@ -14,7 +14,7 @@
 
     <div class="buttons is-centered">
         {% for item in config.extra.social_items %}
-        <a class="button is-rounded" href="{{ item.url | safe }}">
+        <a class="button" href="{{ item.url | safe }}">
             <span class="icon">
                 {% set icon_path = "static/icon/" ~ item.icon ~ ".svg" %}
                 {% set icon = load_data(path=icon_path) %}
