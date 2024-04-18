@@ -13,3 +13,7 @@
 - Mapbox GL
 - Google Fonts
 - GoatCounter
+
+## Page Speed Insights
+- [Desktop](https://pagespeed.web.dev/analysis/https-paper-zola-pages-dev/5lfdl7yonv?form_factor=desktop)
+- [Mobile](https://pagespeed.web.dev/analysis/https-paper-zola-pages-dev/5lfdl7yonv?form_factor=mobile)
