@@ -1,11 +1,14 @@
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
+        {% set item = config.extra.navbar_items | first %}
         <a class="navbar-item" href="{{ config.base_url | safe }}">
             <span class="icon-text">
                 <span class="icon">
-                    <i class="fas fa-home" aria-hidden="true"></i>
+                    {% set icon_path = "static/icon/" ~ item.icon ~ ".svg" %}
+                    {% set icon = load_data(path=icon_path) %}
+                    {{ icon | safe }}
                 </span>
-                <span>Home</span>
+                <span>{{ item.title | safe }}</span>
             </span>
         </a>
 
@@ -20,14 +23,18 @@
     <div class="navbar-menu" id="navbar_menu">
         <div class="navbar-start">
             {% for item in config.extra.navbar_items %}
+            {% if loop.index != 1 %}
             <a class="navbar-item" href="{{ item.url | safe }}">
                 <span class="icon-text">
                     <span class="icon">
-                        <i class="{{ item.icon | safe }}" aria-hidden="true"></i>
+                        {% set icon_path = "static/icon/" ~ item.icon ~ ".svg" %}
+                        {% set icon = load_data(path=icon_path) %}
+                        {{ icon | safe }}
                     </span>
                     <span>{{ item.title | safe }}</span>
                 </span>
             </a>
+            {% endif %}
             {% endfor %}
         </div>
 

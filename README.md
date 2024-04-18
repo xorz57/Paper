@@ -10,6 +10,5 @@
 - Chart.js
 - Katex
 - Mapbox GL
-- Font Awesome
 - Google Fonts
 - GoatCounter

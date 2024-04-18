@@ -16,9 +16,10 @@ smart_punctuation = true
 
 [extra]
 navbar_items = [
-    { title = "About", url = "/about/", icon = "fas fa-address-card" },
-    { title = "Posts", url = "/posts/", icon = "fas fa-file" },
-    { title = "Projects", url = "/projects/", icon = "fas fa-flask" }
+    { title = "Home", url = "/", icon = "home-line" },
+    { title = "About", url = "/about/", icon = "user-line" },
+    { title = "Posts", url = "/posts/", icon = "article-line" },
+    { title = "Projects", url = "/projects/", icon = "flask-line" }
 ]
 social_items = [
     { title = "GitHub", url = "https://github.com/xorz57", icon = "fab fa-github" },
