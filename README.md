@@ -1,6 +1,10 @@
-# Paper [Demo](https://paper-zola.pages.dev/)
+# Paper
 
 ![screencapture-paper-zola-pages-dev-2024-04-19-01_17_00](https://github.com/xorz57/Paper/assets/84932056/4108300b-2af3-4f1c-9ce9-b410b2ecba64)
+
+## Demo
+
+- [https://paper-zola.pages.dev](https://paper-zola.pages.dev)
 
 ## Dependencies
 
