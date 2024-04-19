@@ -11,7 +11,6 @@
 - [Chart.js](https://github.com/chartjs/Chart.js)
 - [Katex](https://github.com/KaTeX/KaTeX)
 - [Mapbox GL](https://github.com/mapbox/mapbox-gl-js)
-- [Google Fonts](https://fonts.google.com/)
 - [GoatCounter](https://www.goatcounter.com/)
 
 ## Page Speed Insights
